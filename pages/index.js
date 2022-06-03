@@ -9,7 +9,7 @@ import {
   MeetOurTeam,
   Gallery,
   Join,
-} from "../component";
+} from "../newComponent";
 import jsCookies from "js-cookie";
 import styles from "../styles/Home.module.css";
 import BlogStyle from "../styles/blog.module.css";
