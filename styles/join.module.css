@@ -1,0 +1,34 @@
+.joinPaddingDiv {
+    background-image: url(../public/images/BackgroundImg.svg);
+    padding: 0% 3%;
+}
+
+.textDiv {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.heading {
+    margin-bottom: 30px;
+    font-family: 'Rambla';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #80C4D3;
+}
+
+.text {
+    margin-bottom: 50px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    color: #000000;
+
+}

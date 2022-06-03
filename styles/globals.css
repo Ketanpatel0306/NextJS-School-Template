@@ -1,0 +1,106 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link {
+  color: #80C4D3 !important;
+}
+
+.btnDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px !important;
+  gap: 20px;
+  background-color: #80C4D3 !important;
+  border-radius: 5px;
+  border: none;
+}
+
+.btnText {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 21px;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+}
+
+h1 {
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 45px;
+  text-transform: uppercase;
+}
+
+@media(max-width:992px) {
+  h1 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
+
+@media(max-width:767px) {
+  h1 {
+    font-size: 25px;
+    line-height: 35px;
+  }
+}
+
+@media(max-width:567px) {
+  h1 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+
+.slick-dots li button:before {
+  font-family: 'slick';
+  font-size: 12px !important;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 17px !important;
+  height: 19px;
+  content: '•';
+  text-align: center;
+  opacity: 0 !important;
+  color: #80C4D3 !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-dots li {
+  border-radius: 50%;
+  border: 1px solid #80C4D3 !important;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1 !important;
+}

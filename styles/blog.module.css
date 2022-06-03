@@ -1,0 +1,96 @@
+.blogMainDiv {
+    padding: 0px 3%;
+}
+
+
+.title {
+    padding-top: 30px;
+    margin-bottom: 50px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 45px;
+    text-transform: uppercase;
+}
+
+.col {
+    margin-bottom: 50px;
+
+}
+
+.card {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
+.cardBody {
+    padding-left: 0%;
+}
+
+.cardTitle {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+
+
+}
+
+.cardText {
+    margin-top: 5px;
+    text-align: justify;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.imgDiv {
+    display: inline-flex;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    align-self: center;
+}
+
+.imgText {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 45px;
+    margin-bottom: 0%;
+    margin-left: 15px;
+}
+
+.btnDiv {
+    margin-bottom: 50px;
+}
+
+.btn {
+    margin-top: 30px;
+    align-self: flex-start;
+    padding: 20px 30px;
+    gap: 20px;
+    background: #80C4D3;
+    border-radius: 5px;
+    border: none;
+}
+
+.btnSpan {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 21px;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+
+}

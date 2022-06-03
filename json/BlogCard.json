@@ -1,0 +1,56 @@
+[
+  {
+    "id": "1",
+    "Image": "images/Vector.svg",
+    "Text": " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temp incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    "Title": " September 10, 2021 by Admin",
+    "Icon": "images/VectorChat.png",
+    "IconText": " 10",
+    "Btn": "More Articles"
+  },
+  {
+    "id": "2",
+    "Image": "images/Vector1.svg",
+    "Text": " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do... ",
+    "Title": " September 10, 2021 by Admin",
+    "Icon": "images/VectorChat.png",
+    "IconText": "31",
+    "Btn": "More Articles"
+  },
+  {
+    "id": "3",
+    "Image": "images/Vector2.svg",
+    "Text": " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temp incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    "Title": " September 10, 2021 by Admin",
+    "Icon": "images/VectorChat.png",
+    "IconText": "31",
+    "Btn": "More Articles"
+  },
+  {
+    "id": "4",
+    "Image": "images/Vector.svg",
+    "Text": " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temp incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    "Title": " September 10, 2021 by Admin",
+    "Icon": "images/VectorChat.png",
+    "IconText": " 10",
+    "Btn": "More Articles"
+  },
+  {
+    "id": "5",
+    "Image": "images/Vector1.svg",
+    "Text": " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do... ",
+    "Title": " September 10, 2021 by Admin",
+    "Icon": "images/VectorChat.png",
+    "IconText": "31",
+    "Btn": "More Articles"
+  },
+  {
+    "id": "6",
+    "Image": "images/Vector2.svg",
+    "Text": " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do... ",
+    "Title": " September 10, 2021 by Admin",
+    "Icon": "images/VectorChat.png",
+    "IconText": "31",
+    "Btn": "More Articles"
+  }
+]

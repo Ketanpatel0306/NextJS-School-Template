@@ -1,0 +1,140 @@
+.bannerMainDiv,
+.cardDiv {
+    padding: 5% 3% 0 3%;
+}
+
+.row {
+    padding: 0%;
+}
+
+.heading {
+    margin-bottom: 25px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 45px;
+    text-align: justify;
+    color: #000000;
+
+}
+
+.headingSpan {
+    color: #80C4D3;
+}
+
+.textDiv {
+    width: 75%;
+}
+
+.text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #000000;
+    text-align: justify;
+    margin-bottom: 25px;
+
+}
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    gap: 20px;
+    background: #80C4D3;
+    border-radius: 5px;
+    border: none;
+}
+
+.btnSpan {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 21px;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+
+
+}
+
+.cardImg {
+    width: 20%;
+}
+
+.CardTitle {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 45px;
+    text-transform: uppercase;
+    color: rgba(34, 52, 61, 0.8);
+}
+
+.CardTitleSpan {
+    margin-left: 10px;
+}
+
+.cardBody {
+    padding-left: 0%;
+}
+
+.cardTitle {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+}
+
+.cardText {
+    text-align: justify;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+@media(max-width:992px) {
+    .heading {
+        font-size: 25px;
+        margin-bottom: 7px;
+    }
+
+    .text {
+        font-size: 15px;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+
+    .cardCol {
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width:768px) {
+    .textDiv {
+        width: 100%;
+    }
+
+    .colFirst {
+        margin-bottom: 15px;
+    }
+
+    .btn {
+
+        padding: 12px 12px;
+
+    }
+
+    .btnSpan {
+        font-size: 15px;
+    }
+}

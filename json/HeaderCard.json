@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "Image": "images/icon.png",
+    "Title": " Sport",
+    "Text": "Sports are games such as football and other leisure activitieswhich need physical effort and skill."
+  },
+  {
+    "id": 2,
+    "Image": "images/icon1.png",
+    "Title": " Music",
+    "Text": "Music is expresses ideas and emotions in significant forms through the elements of rhythm and  melody."
+  },
+  {
+    "id": 3,
+    "Image": "images/icon2.png",
+    "Title": " Painting",
+    "Text": "painting is the expression or application of human creative skill and imagination in a visual form."
+  }
+]

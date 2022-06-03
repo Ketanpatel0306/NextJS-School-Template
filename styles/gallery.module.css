@@ -1,0 +1,21 @@
+.paddingDiv {
+    padding: 1% 3% 2% 3%;
+}
+
+.heading {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 45px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.headingSpan {
+    margin-left: 10px;
+}
+
+.col {
+    margin-bottom: 20px;
+}
