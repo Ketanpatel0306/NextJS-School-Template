@@ -41,9 +41,7 @@ export const Banner = ({ color }) => {
                 </p>
               </div>
               <button className={Style.btn}>
-                <span className={Style.btnSpan} onClick={() => changeColor()}>
-                  More info &rarr;
-                </span>
+                <span className={Style.btnSpan}>More info &rarr;</span>
               </button>
             </div>
           </Col>
