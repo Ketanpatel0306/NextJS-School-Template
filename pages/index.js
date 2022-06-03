@@ -11,6 +11,7 @@ import {
   Join,
 } from "../newComponent";
 import jsCookies from "js-cookie";
+import NextCookies from "next-cookies";
 import styles from "../styles/Home.module.css";
 import BlogStyle from "../styles/blog.module.css";
 import BlogCardJson from "../json/BlogCard.json";
@@ -20,12 +21,20 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import TeamStyle from "../styles/meetOurTeam.module.css";
 import TeamJson from "../json/Team.json";
+import { useDispatch, useSelector } from "react-redux";
+import { ChangeTheColor } from "../store/actions";
 
 export default function Home() {
   const [color, setColor] = useState(false);
+
+  const GetData = useSelector((state) => state.ColorReducer.color);
+  console.log("state", GetData);
+  const dispatch = useDispatch(GetData);
+
   const colorThem = () => {
+    // console.log("item===>", item);
     setColor(!color);
-    console.log("hello");
+    dispatch(ChangeTheColor(!color));
   };
   var settings = {
     dots: true,
@@ -70,20 +79,20 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header changeColor={() => colorThem()} color={color} />
-      <Banner color={color} />
+      <Header changeColor={() => colorThem()} color={GetData} />
+      <Banner color={GetData} />
       <div
         className={BlogStyle.blogMainDiv}
-        style={{ backgroundColor: color ? "black" : "  #FFFFFF" }}
+        style={{ backgroundColor: GetData ? "black" : "  #FFFFFF" }}
       >
         <h1
           className={BlogStyle.title}
-          style={{ color: color ? "white" : " rgba(34, 52, 61, 0.8)" }}
+          style={{ color: GetData ? "white" : " rgba(34, 52, 61, 0.8)" }}
         >
           From OUR{" "}
           <span
             className={BlogStyle.titleSpan}
-            style={{ color: color ? "white" : "#80C4D3" }}
+            style={{ color: GetData ? "white" : "#80C4D3" }}
           >
             Blog
           </span>
@@ -101,7 +110,7 @@ export default function Home() {
                   className={BlogStyle.col}
                   key={index + "BlogCard"}
                 >
-                  <Blog color={color} item={item} index={index} />
+                  <Blog color={GetData} item={item} index={index} />
                 </Col>
               );
             }
@@ -116,17 +125,17 @@ export default function Home() {
       <div
         className={TeamStyle.paddingDiv}
         style={{
-          backgroundColor: color ? "black" : "#EDEDED",
+          backgroundColor: GetData ? "black" : "#EDEDED",
         }}
       >
         <h1
           className={TeamStyle.heading}
-          style={{ color: color ? "white" : " rgba(34, 52, 61, 0.7)" }}
+          style={{ color: GetData ? "white" : " rgba(34, 52, 61, 0.7)" }}
         >
           Meet Our
           <span
             className={TeamStyle.headingSpan}
-            style={{ color: color ? "white" : " #80C4D3" }}
+            style={{ color: GetData ? "white" : " #80C4D3" }}
           >
             Staff
           </span>
@@ -144,16 +153,16 @@ export default function Home() {
                   key={index + "team"}
                   className={TeamStyle.col}
                 >
-                  <MeetOurTeam item={item} color={color} />
+                  <MeetOurTeam item={item} color={GetData} />
                 </Col>
               );
             })}
           </Slider>
         </Row>
       </div>
-      <Gallery color={color} />
-      <Join color={color} />
-      <Footer color={color} />
+      <Gallery color={GetData} />
+      <Join color={GetData} />
+      <Footer color={GetData} />
     </div>
   );
 }
