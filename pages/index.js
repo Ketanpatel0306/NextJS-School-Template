@@ -28,10 +28,10 @@ export default function Home() {
   const [color, setColor] = useState(false);
 
   const GetData = useSelector((state) => state.ColorReducer.color);
-  console.log("state", GetData);
+  // console.log("state", GetData);
   const dispatch = useDispatch(GetData);
 
-  const colorThem = () => {
+  const colorThem = (item) => {
     // console.log("item===>", item);
     setColor(!color);
     dispatch(ChangeTheColor(!color));
