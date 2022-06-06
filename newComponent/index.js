@@ -5,3 +5,5 @@ export * from "./Blog";
 export * from "./MeetOurTeam";
 export * from "./Gallery";
 export * from "./Join";
+export * from "./ToTop";
+export * from "./BottomBar";

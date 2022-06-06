@@ -22,9 +22,12 @@ export const Gallery = ({ color }) => {
           gAllery{" "}
         </span>
       </h1>
-      <Row>
+      {/* <Row>
         <Col xl={8} lg={8} md={8} sm={12} xs={12} className={Style.col}>
-          <img src="./images/Gallery.svg" className="w-100" />
+          <img
+            src="./images/Gallery.png"
+            style={{ width: "100%", height: "71%" }}
+          />
         </Col>
         <Col xl={4} lg={4} md={4} sm={12} xs={12} className={Style.col}>
           <img src="./images/Gallery1.svg" className="w-100" />
@@ -44,12 +47,20 @@ export const Gallery = ({ color }) => {
         <Col xl={8} lg={8} md={8} sm={12} xs={12} className={Style.col}>
           <img src="./images/Gallery6.svg" className="w-100" />
         </Col>
-      </Row>
-      {/* <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}> */}
-      {/* <Masonry> */}
-
-      {/* </Masonry> */}
-      {/* </ResponsiveMasonry> */}
+      </Row> */}
+      <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 2 }}>
+        <Masonry>
+          <img
+            src="./images/Gallery.png"
+            style={{ width: "100%", height: "71%" }}
+          />
+          <img src="./images/Gallery1.svg" className="w-100" />
+          <img src="./images/Gallery2.svg" className="w-100" />
+          <img src="./images/Gallery3.svg" className="w-100" />
+          <img src="./images/Gallery4.svg" className="w-100" />
+          <img src="./images/Gallery6.svg" className="w-100" />
+        </Masonry>
+      </ResponsiveMasonry>
     </div>
   );
 };
