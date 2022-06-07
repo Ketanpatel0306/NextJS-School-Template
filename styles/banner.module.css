@@ -49,6 +49,18 @@
     background: #80C4D3;
     border-radius: 5px;
     border: none;
+    background-position: center;
+    transition: background 0.8s;
+}
+
+.btn:hover {
+    background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+}
+
+.btn:active {
+    background-color: #6eb9f7;
+    background-size: 100%;
+    transition: background 0s;
 }
 
 .btnSpan {
@@ -102,6 +114,12 @@
     line-height: 26px;
 }
 
+.img {
+    width: 100%;
+}
+
+
+
 @media(max-width:992px) {
     .heading {
         font-size: 25px;
@@ -122,6 +140,14 @@
 @media(max-width:768px) {
     .textDiv {
         width: 100%;
+    }
+
+    .cardImg {
+        align-self: center;
+    }
+
+    .cardTitle {
+        text-align: center;
     }
 
     .colFirst {

@@ -33,11 +33,27 @@ export const Footer = ({ color }) => {
         </Nav>
       </div>
       <div className={Style.iconDiv}>
-        <img src="./images/facebook.png" className={Style.img} />
-        <img src="./images/twitter.png" className={Style.img} />
-        <img src="./images/instagram.png" className={Style.img} />
-        <img src="./images/whatsapp.png" className={Style.img} />
-        <img src="./images/telegram.png" className={Style.img} />
+        <div className={Style.facebook}>
+          <img src="./images/facebook.png" className={Style.img} />
+          <img src="./images/facebook.png" className={Style.img1} />
+        </div>
+
+        <div className={Style.twitter}>
+          <img src="./images/twitter.png" className={Style.img} />
+          <img src="./images/twitter.png" className={Style.img1} />
+        </div>
+        <div className={Style.instagram}>
+          <img src="./images/instagram.png" className={Style.img} />
+          <img src="./images/instagram.png" className={Style.img1} />
+        </div>
+        <div className={Style.whatsApp}>
+          <img src="./images/whatsapp.png" className={Style.img} />
+          <img src="./images/whatsapp.png" className={Style.img1} />
+        </div>
+        <div className={Style.telegram}>
+          <img src="./images/telegram.png" className={Style.img} />
+          <img src="./images/telegram.png" className={Style.img1} />
+        </div>
       </div>
       <h5 className={Style.copyRight}>Copyright © 2021. All Right Reserved.</h5>
     </div>

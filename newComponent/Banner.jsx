@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import Style from "../styles/banner.module.css";
 import { Row, Col, Card } from "react-bootstrap";
 import CardJson from "../json/HeaderCard.json";
+import Flip from "react-reveal/Flip";
+import Jump from "react-reveal/Jump";
 export const Banner = ({ color }) => {
   const color1 = "#EDEDED";
   const color2 = "#FFFFFF";
@@ -17,36 +19,40 @@ export const Banner = ({ color }) => {
       >
         <Row className={Style.row}>
           <Col xl={6} lg={6} md={6} sm={12} xs={12} className={Style.colFirst}>
-            <div>
-              <h2
-                className={Style.heading}
-                style={{ color: color ? "white" : "#000000" }}
-              >
-                Lorem Ipsum dolor <br />
-                <span
-                  className={Style.headingSpan}
-                  style={{ color: color ? "white" : "#80C4D3" }}
-                >
-                  sit amet.{" "}
-                </span>
-              </h2>
-              <div className={Style.textDiv}>
-                <p
-                  className={Style.text}
+            <Jump>
+              <div>
+                <h2
+                  className={Style.heading}
                   style={{ color: color ? "white" : "#000000" }}
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod temp incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam.
-                </p>
+                  Lorem Ipsum dolor <br />
+                  <span
+                    className={Style.headingSpan}
+                    style={{ color: color ? "white" : "#80C4D3" }}
+                  >
+                    sit amet.{" "}
+                  </span>
+                </h2>
+                <div className={Style.textDiv}>
+                  <p
+                    className={Style.text}
+                    style={{ color: color ? "white" : "#000000" }}
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod temp incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam.
+                  </p>
+                </div>
+                <button className={Style.btn}>
+                  <span className={Style.btnSpan}>More info &rarr;</span>
+                </button>
               </div>
-              <button className={Style.btn}>
-                <span className={Style.btnSpan}>More info &rarr;</span>
-              </button>
-            </div>
+            </Jump>
           </Col>
           <Col xl={6} lg={6} md={6} sm={12} xs={12} className={Style.colSecond}>
-            <img src="./images/Image.svg" className="w-100" />
+            <Flip right>
+              <img src="./images/Image.svg" className={Style.img} />
+            </Flip>
           </Col>
         </Row>
       </div>

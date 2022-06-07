@@ -41,10 +41,37 @@
 .iconDiv {
     display: flex;
     justify-content: center;
+    margin: 15px 0px;
 }
 
 .img {
     margin: 3% 20px;
+    cursor: pointer;
+}
+
+.img1 {
+    margin: 3% 20px;
+    display: none;
+}
+
+.facebook:hover .img,
+.twitter:hover .img,
+.instagram:hover .img,
+.whatsApp:hover .img,
+.telegram:hover .img {
+    display: none;
+}
+
+
+.facebook:hover .img1,
+.twitter:hover .img1,
+.instagram:hover .img1,
+.whatsApp:hover .img1,
+.telegram:hover .img1 {
+    display: block;
+    background-color: green;
+    margin-top: -30px;
+
 }
 
 .copyRight {
@@ -58,6 +85,8 @@
     opacity: 0.5;
     text-align: center;
 }
+
+
 
 @media(max-width:500px) {
     .navItem {

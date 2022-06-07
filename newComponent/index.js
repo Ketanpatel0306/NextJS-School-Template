@@ -3,7 +3,7 @@ export * from "./Footer";
 export * from "./Banner";
 export * from "./Blog";
 export * from "./MeetOurTeam";
-export * from "./Gallery";
+export * from "./GalleryImg";
 export * from "./Join";
 export * from "./ToTop";
 export * from "./BottomBar";

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { FaAngleUp } from "react-icons/fa";
 import Style from "../styles/toTop.module.css";
-
 export const ToTop = () => {
   const [showBtn, setShowBtn] = useState(false);
   useEffect(() => {
